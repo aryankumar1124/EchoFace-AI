@@ -1,61 +1,75 @@
-FaceFusion
-==========
+# EchoFace AI
 
-> Industry leading face manipulation platform.
+AI-powered real-time face swapping and enhancement system built using ONNX Runtime, CoreML, OpenCV, and Gradio.
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/facefusion/facefusion/ci.yml.svg?branch=master)](https://github.com/facefusion/facefusion/actions?query=workflow:ci)
-[![Coverage Status](https://img.shields.io/coveralls/facefusion/facefusion.svg)](https://coveralls.io/r/facefusion/facefusion)
-![License](https://img.shields.io/badge/license-OpenRAIL--AS-green)
+---
 
+## Overview
 
-Preview
--------
+EchoFace AI is a deep-learning-based face manipulation platform capable of performing high-quality face swaps, age modification, facial enhancement, and real-time AI-powered image processing.
 
-![Preview](https://raw.githubusercontent.com/facefusion/facefusion/master/.github/preview.png?sanitize=true)
+The project was customized and optimized for macOS Apple Silicon devices using CoreML acceleration and ONNX Runtime for improved local inference performance.
 
+---
 
-Installation
-------------
+## Features
 
-Be aware, the [installation](https://docs.facefusion.io/installation) needs technical skills and is not recommended for beginners. In case you are not comfortable using a terminal, our [Windows Installer](http://windows-installer.facefusion.io) and [macOS Installer](http://macos-installer.facefusion.io) get you started.
+- Real-time AI face swapping
+- Facial enhancement and restoration
+- Age modification
+- Face masking and detection
+- ONNX Runtime accelerated inference
+- CoreML support for Apple Silicon
+- Interactive Gradio-based web interface
+- Local processing with no cloud dependency
 
+---
 
-Usage
------
+## Tech Stack
 
-Run the command:
+- Python
+- OpenCV
+- ONNX Runtime
+- CoreML
+- Gradio
+- NumPy
+- Deep Learning Models
 
-```
-python facefusion.py [commands] [options]
+---
 
-options:
-  -h, --help                                      show this help message and exit
-  -v, --version                                   show program's version number and exit
+## Demo
 
-commands:
-    run                                           run the program
-    headless-run                                  run the program in headless mode
-    batch-run                                     run the program in batch mode
-    force-download                                force automate downloads and exit
-    benchmark                                     benchmark the program
-    job-list                                      list jobs by status
-    job-create                                    create a drafted job
-    job-submit                                    submit a drafted job to become a queued job
-    job-submit-all                                submit all drafted jobs to become a queued jobs
-    job-delete                                    delete a drafted, queued, failed or completed job
-    job-delete-all                                delete all drafted, queued, failed and completed jobs
-    job-add-step                                  add a step to a drafted job
-    job-remix-step                                remix a previous step from a drafted job
-    job-insert-step                               insert a step to a drafted job
-    job-remove-step                               remove a step from a drafted job
-    job-run                                       run a queued job
-    job-run-all                                   run all queued jobs
-    job-retry                                     retry a failed job
-    job-retry-all                                 retry all failed jobs
-```
+### User Interface
 
+![UI Preview](facefusion/Demo/Image 20-05-26 at 5.20 PM.jpg)
 
-Documentation
--------------
+### Face Swap Example
 
-Read the [documentation](https://docs.facefusion.io) for a deep dive.
+![Swap Example](facefusion/Demo/Image 20-05-26 at 5.21 PM.jpg)
+
+### Additional Output
+
+![Output Example](facefusion/Demo/Image 20-05-26 at 5.22 PM.jpg)
+
+---
+
+## Architecture
+
+EchoFace AI uses a modular AI inference pipeline:
+
+1. Face Detection  
+2. Landmark Extraction  
+3. Face Embedding Generation  
+4. Neural Face Swapping  
+5. Post-processing & Enhancement  
+6. Final Rendering
+
+The system leverages ONNX Runtime and CoreML execution providers for optimized local inference.
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/aryankumar1124/EchoFace-AI.git
+cd EchoFace-AI

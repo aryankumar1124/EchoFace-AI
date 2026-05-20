@@ -189,7 +189,7 @@ LOCALES : Locales =\
 		},
 		'about':
 		{
-			'fund': '',
+			'fund': 'AI-Powered Face Transformation System',
 			'subscribe': '',
 			'join': 'AI-Powered Face Transformation System'
 		},
