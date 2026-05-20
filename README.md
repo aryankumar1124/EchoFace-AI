@@ -37,22 +37,6 @@ The project was customized and optimized for macOS Apple Silicon devices using C
 
 ---
 
-## Demo
-
-### User Interface
-
-![UI Preview](facefusion/Demo/Image 20-05-26 at 5.20 PM.jpg)
-
-### Face Swap Example
-
-![Swap Example](facefusion/Demo/Image 20-05-26 at 5.21 PM.jpg)
-
-### Additional Output
-
-![Output Example](facefusion/Demo/Image 20-05-26 at 5.22 PM.jpg)
-
----
-
 ## Architecture
 
 EchoFace AI uses a modular AI inference pipeline:
